@@ -16,7 +16,15 @@ pipeline {
         }
          stage(build){
             steps {
+                 
+                  sh 'mvn clean package'
+
+            }
+        }
+        stage(build){
+            steps {
                   echo"pulling change from the branch ${params.branch}"
+                  
 
             }
         }
