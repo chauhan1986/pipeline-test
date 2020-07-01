@@ -16,7 +16,7 @@ pipeline {
         }
          stage(build){
             steps {
-                  echo"pulling change from the branch ${params.branch}"
+                  echo"pulling change from the branch shiv"
 
             }
         }
