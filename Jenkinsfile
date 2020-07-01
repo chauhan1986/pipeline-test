@@ -4,7 +4,7 @@ pipeline {
         timestamps()
     }
     parameters {
-        choice(name: 'CHOICE', choices: ['dev', 'qa', 'master'], description:  'Choose your branch?', name: 'branch') 
+        choice(choices: ['dev', 'qa', 'master'], description:  'Choose your branch?', name: 'branch') 
    }
     
     stages {
